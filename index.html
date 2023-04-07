@@ -52,15 +52,15 @@
      <p style="font-size:20px; font-weight: bold; text-align: center;">Special Attack vs. Special Defense stat Spread</p>
      <p style="font-size:20px; font-weight:; text-align: center;">For all Pokémon, we can view both their Sp. Att and Sp. Def statistics. The data points are colored differently if the Pokémon is a legendary or a standard Pokémon. The visualization is interactive, so you can zoom in on specific data points, and hover, to get more information about the point.</p>
         
-    <!-- Div for second visualization with an ID vis2-->
+    <!-- Div for second visualization with an ID vis3-->
         <div id="vis2" class="center"></div>
 
          <!-- Add a header for the second vis--> 
          <p style="font-size:20px; font-weight: bold; text-align: center;">Type Violin Chart</p>
          <p style="font-size:20px; font-weight:; text-align: center;">Each Pokémon has a primary typing, and most have a secondary typing as well. This violin chart shoes the total stat spread for all Pokémon of each of the currently existing primary types. The wider the bulge, the more popular that total stat count is for pokemon of that type. The higher the violin reaches, means that that type has Pokémon with higher total stat counts.</p>
             
-        <!-- Div for second visualization with an ID vis2-->
-            <div id="vis2" class="center"></div>
+        <!-- Div for third visualization with an ID vis3-->
+            <div id="vis3" class="center"></div>
 
 
     <!--VegaEmbed function for chart 1/vis1 -->   
@@ -116,8 +116,8 @@
                         + '</div>');
         throw error;
     }
-    const el = document.getElementById('vis2');
-    vegaEmbed("#vis2", spec, embedOpt)
+    const el = document.getElementById('vis3');
+    vegaEmbed("#vis3", spec, embedOpt)
       .catch(error => showError(el, error));
   })(vegaEmbed);
 
